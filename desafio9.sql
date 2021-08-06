@@ -2,7 +2,7 @@ DELIMITER $$
 
 CREATE PROCEDURE SpotifyClone.albuns_do_artista(IN artist_name VARCHAR(100))
 BEGIN
-	SELECT
+SELECT
     CONCAT(a.first_name, ' ', a.last_name) AS artista,
     a2.album_title AS album
     FROM artists AS a
